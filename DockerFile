@@ -1,5 +1,5 @@
 FROM node
 COPY . .
-RUN nom install
+RUN npm install
 EXPOSE 8080
 CMD [ "node", "src/app.js"]
