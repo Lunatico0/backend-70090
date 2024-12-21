@@ -8,7 +8,12 @@ export default class UserRepository extends GenericRepository {
     getUserByEmail = (email) => {
         return this.getBy({ email });
     }
+
     getUserById = (id) => {
         return this.getBy({ _id: id })
+    }
+
+    deleteUser = async (id) => {
+        return await this.dao.delete(id);
     }
 }
