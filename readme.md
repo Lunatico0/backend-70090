@@ -20,11 +20,11 @@ Para iniciar el servidor, ejecuta:
 npm run dev
 ```
 
-El servidor se ejecutará en `http://localhost:3000`.
+El servidor se ejecutará en `http://localhost:8080`.
 
 ## Documentación de la API
 
-La documentación de la API está disponible en `http://localhost:3000/api-docs` una vez que el servidor esté en funcionamiento. Esta documentación está generada con Swagger.
+La documentación de la API está disponible en `http://localhost:8080/api-docs` una vez que el servidor esté en funcionamiento. Esta documentación está generada con Swagger.
 
 ## Endpoints Principales
 
@@ -45,7 +45,7 @@ POST /api/adoptions/:userId/:petId
 ```javascript
 import axios from 'axios';
 
-const response = await axios.post('http://localhost:3000/api/adoptions/validUserId/validPetId');
+const response = await axios.post('http://localhost:8080/api/adoptions/validUserId/validPetId');
 console.log(response.data);
 ```
 
