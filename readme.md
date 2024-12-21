@@ -54,10 +54,20 @@ console.log(response.data);
 Para ejecutar las pruebas, usa el siguiente comando:
 
 ```bash
-npm run superTest
+npm test
 ```
 
 Las pruebas están definidas en el archivo `superTest.test.mjs` y utilizan `chai` y `axios` para realizar las solicitudes y validar las respuestas.
+
+## Docker
+
+Puedes obtener la imagen Docker de la aplicación desde DockerHub con el siguiente comando:
+
+```bash
+docker pull lunatico01/preentrega:1.2.1
+```
+
+El enlace a DockerHub es: [lunatico01/preentrega](https://hub.docker.com/r/lunatico01/preentrega)
 
 ## Estructura del Proyecto
 
